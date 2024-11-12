@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="images/Logo_CV.png">
+    <meta name="theme-color" content="white">
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-messaging.js"></script>
+    
+    <title>UAS | Rizqy</title>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">RIZQY MULYA SAPUTRA</a>
+        <nav class="navigation">
+            <a href="#services">Notifikasi</a>
+            <a href="#projects">Indexdb</a>
+            <a href="#contact">CV</a>
+            
+            
+        </nav>
+    </header>
+
+    <section class="main">
+        <div>
+            <div class="profile-photo">
+                <img src="images/profile.png" alt="RIZQY MULYA SAPUTRA">
+            </div>
+            <div class="profile-info">
+                <h3>Hello, RIZQY MULYA SAPUTRA<br> 
+                <h3>22205007 | Teknik Informatika</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards" id="services">
+        <h2 class="title">Notifikasi</h2>
+        <div class="content">
+            <div class="card">
+                <div class="info">
+                    <div id="token"></div>
+                    <div id="msg"></div>
+                    <div id="notis"></div>
+                    <div id="err"></div>
+                    <button id="tombol">Izinkan Notifikasi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Indexdb</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-info">
+                    <form id="komentarForm">
+                        <label for="nama">Nama</label>
+                        <input type="text" name="nama" id="nama" required><br><br>
+            
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required><br><br>
+            
+                        <label for="komentar">Komentar</label>
+                        <textarea name="komentar" id="komentar" rows="4" required></textarea><br><br>
+            
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Curriculum Vitae</h2>
+        <div class="content">
+            <div class="card">
+                <div class="data-diri">
+                    <h3>Data Diri</h3>
+                        <div class="data-item"><span>Nama</span><span>Rizqy Mulya Saputra</span></div>
+                        <div class="data-item"><span>Email</span><span>Saputrarizqy2003@gmail.com</span></div>
+                        <div class="data-item"><span>Phone</span><span>0895384223316</span></div>
+                        <div class="data-item"><span>Alamat</span><span>Jl Mangga No 03 RT 02 RW 04 Kelurahan Procot Kec Slawi Kab Tegal</span></div>
+                </div></br>
+                <div class="pendidikan">
+                    <h3>Pendidikan</h3>
+                    <p>SMK N 1 Adiwerna , 2018-2021</p>
+                </div></br>
+                <div class="pengalaman-kerja">
+                    <h3>Pengalaman Kerja</h3>
+                        <p>-</p>
+                </div></br>
+                <div class="kemampuan">
+                    <h3>Kemampuan</h3>
+                 -
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>RIZQY MULYA SAPUTRA</span></p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/indexdb.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
